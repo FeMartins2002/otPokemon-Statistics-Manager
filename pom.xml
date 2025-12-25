@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>br.com</groupId>
+  <artifactId>otPokemonDB</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>otPokemonDB</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.junit</groupId>
+  			<artifactId>junit-bom</artifactId>
+  			<version>5.11.0</version>
+  			<type>pom</type>
+  			<scope>import</scope>
+  		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+  	<!-- SQLite -->
+  	<dependency>
+  		<groupId>org.xerial</groupId>
+  		<artifactId>sqlite-jdbc</artifactId>
+  		<version>3.50.3.0</version>
+  	</dependency>
+  
+  	<!-- JUnit -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <scope>test</scope>
+    </dependency>
+    
+    <dependency>
+    	<groupId>org.junit.jupiter</groupId>
+    	<artifactId>junit-jupiter-params</artifactId>
+    	<scope>test</scope>
+    </dependency>
+    
+    <!-- AssertJ -->
+    <dependency>
+    	<groupId>org.assertj</groupId>
+    	<artifactId>assertj-core</artifactId>
+    	<version>3.27.6</version>
+    	<scope>test</scope>
+    </dependency>
+    
+    <dependency>
+    	<groupId>org.assertj</groupId>
+    	<artifactId>assertj-swing-junit</artifactId>
+    	<version>3.17.1</version>
+    	<scope>test</scope>
+    </dependency>
+    
+    <!-- JFreeChart -->
+	<dependency>
+    	<groupId>jfree</groupId>
+    	<artifactId>jfreechart</artifactId>
+    	<version>1.0.13</version>
+	</dependency>
+  </dependencies>
+</project>
