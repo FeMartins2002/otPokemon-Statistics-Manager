@@ -89,7 +89,7 @@ public class MenuPanel extends JPanel implements ActionListener {
 			File destination = Backup.openSaveWindow(home);
 
 			if (destination != null) {
-				boolean success = Backup.saveCopyOfBank(Connector.getUrl(), destination);
+				boolean success = Backup.saveCopyOfBank(Connector.getPathdb(), destination);
 
 				if (success) {
 					JOptionPane.showMessageDialog(home, 
